@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Geral */
+@font-face {
+  font-family: titleFont;
+  src: url(../src/assets/fonts/films.MO.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: textFont;
+  src: url(../src/assets/fonts/FrizQuadrataTT.ttf);
+}
+
+body {
+  background-image: url(../src//assets/images/maps/classic_maps/zones/world.jpg);
+  background-size:cover;
+  background-position: center, bottom;
+  background-attachment: fixed;
+}
+
+/* Isso faz com que todas as caixas e afins no site sejam alinhadas dentro de um jeito só, deixando o código com melhor performance */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(15, 12, 12, 0.541);
+  border-radius: 10px;
+
+  
 }
