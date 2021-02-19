@@ -1,25 +1,23 @@
-import locations from "../../../data/locals";
+import locations from "../../../data/locations";
 
-export default function Locals () {
-    return (<li>
-        Locais
-        <button id="local_show">Expandir</button>
-        <button id="local_hide">Esconder</button>
-        {locations.map((location) => (<ul
-          key={location.id}
-        >
+export default function Locals() {
+  return (
+    <li>
+      Areas
+      <button id="local_show">Expandir</button>
+      <button id="local_hide">Esconder</button>
+      {locations.map((location) => (
+        <ul key={location.id}>
           <li>
             {location.name}
-            <ul class="kalimdor">
-              {location.sublocations.map((sublocation) => (<li key={sublocation.id}>
-                <a
-                  href="./pages/areas/kalimdor/teldrasil.html"
-                  title={sublocation.name}
-                  >{sublocation.name}</a
-                >
-              </li>))}
+            <ul class="kalimdor_zone">
+              {location.sublocations.map((sublocation) => (
+                <li key={sublocation.id}>{sublocation.name}</li>
+              ))}
             </ul>
           </li>
-        </ul>))}
-      </li>)
+        </ul>
+      ))}
+    </li>
+  );
 }

@@ -1,0 +1,40 @@
+const classes = [
+    {
+        id:0,
+        name:"Warrior"
+    },
+    {
+        id:1,
+        name:"Paladin"
+    },
+    {
+        id:2,
+        name:"Hunter"
+    },
+    {
+        id:3,
+        name:"Rogue"
+    },
+    {
+        id:4,
+        name:"Mage"
+    },
+    {
+        id:5,
+        name:"Warlock"
+    },
+    {
+        id:6,
+        name:"Shaman"
+    },
+    {
+        id:7,
+        name:"Druid"
+    },
+    {
+        id:8,
+        name:"Priest"
+    }
+]
+
+export default classes;

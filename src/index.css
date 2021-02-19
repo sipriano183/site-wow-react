@@ -17,11 +17,92 @@ body {
 }
 
 /* Isso faz com que todas as caixas e afins no site sejam alinhadas dentro de um jeito só, deixando o código com melhor performance */
-.wrapper {
+.root {
   max-width: 1200px;
   margin: 0 auto;
   background: rgba(15, 12, 12, 0.541);
-  border-radius: 10px;
+  border-radius: 10px; 
+}
 
+.main_header {
+  font-family: "titleFont", sans-serif;
+  font-size: 1.5rem;
+  color: rgba(223, 201, 3, 0.904);
+  text-shadow: 4px 4px 4px black;
+  text-align: center;
+  word-spacing: 10px;
+  border: 1px solid rgba(197, 189, 189, 0.829);
+  background:rgba(15, 12, 12, 0.801);
+  border-radius: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  
+
+}
+
+.site_nav {
+  font-family: "titleFont", sans-serif;
+  text-shadow: 4px 4px 4px black;
+  color: rgba(235, 240, 247, 0.863);
+  line-height: 1.5;
+  text-align: left;
+  list-style-position: inside;
+  padding-left: 2rem;
+}
+/* Index */
+
+/*.kalimdor, .eastern_kingdoms, .classes, .professions, .ally, .horde {
+  display: grid;
+  grid-template-columns: 325px 325px 325px;
+
+} */
+
+.main_introduction {
+  font-family: "textFont", sans-serif;
+  text-shadow: 4px 4px 4px black;
+  color:rgba(255, 255, 255, 0.904);
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 3rem;
+  border: 1px solid rgba(197, 189, 189, 0.829);
+  background:rgba(15, 12, 12, 0.801);
+  border-radius: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.main_introduction > h2, .main_introduction > h3 {
+  font-family: "titleFont", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color:green;
+  text-shadow: 4px 4px 4px black;
+}
+
+a:visited {
+  color:orange;
+  text-shadow: 4px 4px 4px black;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  text-shadow: 4px 4px 4px black;
+}
+
+a:focus{
+  border-bottom: 1px solid;
+  text-shadow: 4px 4px 4px black;
+}
+
+/* Icons */
+
+#icon_alchemy, #icon_blacksmith, #icon_cooking, #icon_enchanting, #icon_engineering, #icon_herbalism, #icon_firstaid, #icon_fishing, #icon_leatherworking, #icon_skinning, #icon_tailoring {
+  width: 30px;
+  border: 1px solid gray;
   
 }
