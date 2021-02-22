@@ -13,18 +13,10 @@ export default function Home() {
       </header>
       <nav class="site_nav">
         <h2>Navegue pelo site:</h2>
-        <ul>
           <Locals />
-        </ul>
-        <ul>
           <Races />
-        </ul>
-        <ul>
           <Classe />
-        </ul>
-        <ul>
           <Professions />
-        </ul>
       </nav>
     </div>
   );

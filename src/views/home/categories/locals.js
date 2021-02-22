@@ -1,12 +1,14 @@
+import { useState } from "react";
 import locations from "../../../data/locations";
 
 export default function Locals() {
+
+  const [isShow, setIsShow] = useState(false)
+  const toggle = () => setIsShow(!isShow)
   return (
-    <li>
-      Areas
-      <button id="local_show">Expandir</button>
-      <button id="local_hide">Esconder</button>
-      {locations.map((location) => (
+    <ul>
+      <button className="show" onMouseOver={toggle}>{isShow ? 'Areas' : 'Areas'}</button>
+      {isShow && locations.map((location) => (
         <ul key={location.id}>
           <li>
             {location.name}
@@ -18,6 +20,6 @@ export default function Locals() {
           </li>
         </ul>
       ))}
-    </li>
+    </ul>
   );
 }

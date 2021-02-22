@@ -1,12 +1,14 @@
+import { useState } from "react";
 import factions from "../../../data/races";
 
-export default function races() {
+export default function Races() {
+
+  const [isShow, setIsShow] = useState(false)
+  const toggle = () => setIsShow(!isShow)
   return (
-    <li>
-      Races
-      <button id="local_show">Expandir</button>
-      <button id="local_hide">Esconder</button>
-      {factions.map((faction) => (
+    <ul>
+      <button className="show" onMouseOver={toggle}>{isShow ? 'Races' : 'Races'}</button>
+      {isShow && factions.map((faction) => (
         <ul key={faction.id}>
           <li>
             {faction.name}
@@ -18,7 +20,7 @@ export default function races() {
           </li>
         </ul>
       ))}
-    </li>
+    </ul>
   );
 }
 
