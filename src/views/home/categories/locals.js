@@ -1,7 +1,7 @@
 import { useState } from "react";
 import locations from "../../../data/locations";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Teldrassil from "../../pages/teldrassil";
+import Teldrassil from "../../teldrassil/teldrassil";
 
 export default function Locals() {
   const [isShow, setIsShow] = useState(false);
