@@ -41,7 +41,7 @@ body {
 }
 
 .site_nav {
-  align-items:center;
+  align-items:flex-start;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, auto));
   grid-auto-rows: minmax(20px, auto);
@@ -58,6 +58,19 @@ body {
 .site_nav > h2 {
   color:rgba(223, 201, 3, 0.904);
 }
+
+.subitems {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  grid-auto-rows: minmax(20px, auto);
+}
+
+.subitems > li {
+  display:flex;
+  align-items: center;
+}
+
 
 .show {
   font-family: "titleFont", sans-serif;

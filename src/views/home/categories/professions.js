@@ -9,10 +9,10 @@ export default function Profession() {
     <ul>
       <button className="show" onMouseOver={toggle}>{isShow ? 'Professions' : 'Professions'}</button>
       {isShow && professions.map((professions) => (
-        <ul class="professions" key={professions.id}>
+        <ul class="subitems" key={professions.id}>
           <li>
             <img src={professions.image.default} className="profession_icon" alt="Profession Icon" /> -
-            - {professions.name}
+            {professions.name}
           </li>
         </ul>
       ))}

@@ -10,7 +10,7 @@ export default function Classe() {
     <ul>
       <button className="show" onMouseOver={toggle}>{isShow ? 'Classes' : 'Classes'}</button>
       {isShow && classes.map((classes) => (
-        <ul class="classes" key={classes.id}>
+        <ul className="subitems" key={classes.id}>
           <li>{classes.name}</li>
         </ul>
       ))}

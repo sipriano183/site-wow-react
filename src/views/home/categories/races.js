@@ -12,7 +12,7 @@ export default function Races() {
         <ul key={faction.id}>
           <li>
             {faction.name}
-            <ul class="races">
+            <ul className="subitems">
               {faction.races.map((races) => (
                 <li key={races.id}>{races.name}</li>
               ))}
