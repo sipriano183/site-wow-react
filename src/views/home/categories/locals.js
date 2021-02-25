@@ -1,7 +1,7 @@
 import { useState } from "react";
 import locations from "../../../data/locations";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Teldrassil from "../../teldrassil/teldrassil";
+
 
 export default function Locals() {
   const [isShow, setIsShow] = useState(false);
@@ -14,26 +14,16 @@ export default function Locals() {
       {isShow &&
         locations.map((location) => (
           <ul key={location.id}>
-            <li>
+            <li className="subitems">
               {location.name}
+            </li>
               <ul className="subitems">
                 {location.sublocations.map((sublocation) => (
                   <li key={sublocation.id}>
-                    <Router>
-                      <Link to="/teldrassil">{sublocation.name}</Link>
-                    </Router>
-                    <Switch>
-                      <Route path="/teldrassil">
-                        <Teldrassil />
-                      </Route>
-                      <Route path="/">
-                        <Locals />
-                      </Route>
-                    </Switch>
+                    <Link to="/teldrassil">{sublocation.name}</Link>
                   </li>
                 ))}
               </ul>
-            </li>
           </ul>
         ))}
     </ul>

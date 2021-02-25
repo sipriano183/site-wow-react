@@ -26,7 +26,6 @@ body {
 
 .main_header {
   font-family: "titleFont", sans-serif;
-  font-size: 1.5rem;
   color: rgba(223, 201, 3, 0.904);
   text-shadow: 4px 4px 4px black;
   text-align: center;
@@ -40,47 +39,36 @@ body {
 
 }
 
-.site_nav {
+.main_header > .site_nav {
   align-items:flex-start;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
   grid-auto-rows: minmax(20px, auto);
   font-family: "titleFont", sans-serif;
   text-shadow: 4px 4px 4px black;
   color: rgba(205, 215, 230, 0.863);
-  border: 1px solid rgba(170, 169, 163, 0.829);
-  border-radius: 20px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  padding-right: 150px;
+  border-top: 1px solid rgba(205, 215, 230, 0.863);
 }
 
-.site_nav > h2 {
-  color:rgba(223, 201, 3, 0.904);
-}
 
 .subitems {
-  align-items: center;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-  grid-auto-rows: minmax(20px, auto);
+  grid-template-columns: repeat(auto-fill, minmax(150px, auto));
 }
 
 .subitems > li {
   display:flex;
-  align-items: center;
 }
 
 
 .show {
   font-family: "titleFont", sans-serif;
-  font-size:20px;
+  font-size: 15px;
   text-shadow: 4px 4px 4px black;
-  width: 200px;
-  transition-duration: 0.5s;
+  width: 150px;
   background-color: rgba(117, 107, 107, 0.205);
   color: rgba(223, 201, 3, 0.904);
-  border-radius:12px;
+  border-radius:25px;
 }
 
 
@@ -129,7 +117,6 @@ a:focus{
 /* Icons */
 
 .profession_icon {
-  width: 30px;
-  border: 1px solid gray;
-
+  width: 40px;
+  padding-bottom: 10px;
 } 

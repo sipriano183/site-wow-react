@@ -10,7 +10,7 @@ export default function Races() {
       <button className="show" onMouseOver={toggle}>{isShow ? 'Races' : 'Races'}</button>
       {isShow && factions.map((faction) => (
         <ul key={faction.id}>
-          <li>
+          <li className="subitems">
             {faction.name}
             <ul className="subitems">
               {faction.races.map((races) => (
