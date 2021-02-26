@@ -1,14 +1,17 @@
-import { render } from "@testing-library/react"
-import eastern_kingdoms from "../../assets/images/maps/classic_maps/zones/easternkingdoms.jpg"
+import invisibilty from "../../assets/images/Spells/DetectInvisibility.png";
+import { useState } from "react";
 
 export default function Description() {
-    return(
-        <div className="introduction">
-            <h2>The game</h2>
-            <p>
-                The game is set four years after the events of Warcraft 3: The Frozen Throne. Arthas Menethil became The Lich King and disappeared, dormant in Northrend. The Horde and The Alliance accepted new races in their midst and are now recovering from the Third War.
+  const [isShow, setIsShow] = useState(false);
+  const toggle = () => setIsShow(!isShow);
 
-            </p>
-        </div>
-    )
+  return (
+    <div className="introduction">
+      <h2>The Game</h2>
+      <button onClick={toggle}>
+        <img src={invisibilty} alt="test" className="icon" />
+      </button>
+      
+    </div>
+  );
 }

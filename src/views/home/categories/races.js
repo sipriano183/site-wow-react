@@ -6,7 +6,7 @@ export default function Races() {
   const toggle = () => setIsShow(!isShow);
   return (
     <div>
-      <button className="show" onMouseOver={toggle}>
+      <button className="show" onClick={toggle}>
         {isShow ? "Races" : "Races"}
       </button>
       {isShow &&

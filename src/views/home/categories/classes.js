@@ -8,7 +8,7 @@ export default function Classe() {
 
   return (
     <div className="items">
-      <button className="show" onMouseOver={toggle}>
+      <button className="show" onClick={toggle}>
         {isShow ? "Classes" : "Classes"}
       </button>
       <ul className="subitems">

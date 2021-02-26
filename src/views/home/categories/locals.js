@@ -7,7 +7,7 @@ export default function Locals() {
   const toggle = () => setIsShow(!isShow);
   return (
     <div>
-      <button className="show" onMouseOver={toggle}>
+      <button className="show" onClick={toggle}>
         {isShow ? "Areas" : "Areas"}
       </button>
       {isShow &&

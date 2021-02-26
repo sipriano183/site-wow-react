@@ -27,7 +27,6 @@ body {
 .root {
   max-width: 1200px;
   margin: 0 auto;
-  background: rgba(15, 12, 12, 0.541);
   border-radius: 10px; 
 }
 
@@ -52,6 +51,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(250px, auto));
   grid-auto-rows: minmax(20px, auto);
   font-family: "titleFont", sans-serif;
+  background:rgba(15, 12, 12, 0.801);
   text-shadow: 4px 4px 4px black;
   color: rgba(205, 215, 230, 0.863);
   border-top: 1px solid rgba(205, 215, 230, 0.863);
@@ -60,9 +60,8 @@ body {
 
 .items .subitems {
   display: grid;
-  grid-template-columns: repeat(4, 1fr)
+  grid-template-columns: repeat(4, 1fr);
 }
-
 
 .show {
   font-family: "titleFont", sans-serif;
@@ -72,28 +71,41 @@ body {
   background-color: rgba(117, 107, 107, 0.205);
   color: rgba(223, 201, 3, 0.904);
   border-radius:25px;
-
 }
 
+.introduction > h2, .introduction > h3 {
+  font-family: "titleFont", sans-serif;
+  text-align: center;
+}
 
 .introduction {
   font-family: "textFont", sans-serif;
   text-shadow: 4px 4px 4px black;
   color:rgba(255, 255, 255, 0.904);
+  background:rgba(15, 12, 12, 0.801);
   line-height: 2;
   text-align: justify;
   text-indent: 3rem;
   border: 1px solid rgba(197, 189, 189, 0.829);
-  background:rgba(15, 12, 12, 0.801);
   border-radius: 20px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   padding: 10px;
 }
 
+.introduction > p {
+  opacity: 0;
+  transition: opacity 4s ease-out;
+}
+
+.introduction > p:hover{
+  opacity: 1;
+}
+
 .introduction > h2, .introduction > h3 {
   font-family: "titleFont", sans-serif;
-  text-align: center;
+  text-align: left;
+  text-indent: 5rem;
 }
 
 a {

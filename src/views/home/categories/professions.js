@@ -7,7 +7,7 @@ export default function Profession() {
 
   return (
     <div className="items">
-      <button className="show" onMouseOver={toggle}>
+      <button className="show" onClick={toggle}>
         {isShow ? "Professions" : "Professions"}
       </button>
       <ul className="subitems">
