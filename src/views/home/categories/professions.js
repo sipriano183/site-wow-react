@@ -4,24 +4,25 @@ import professions from "../../../data/professions";
 export default function Profession() {
   const [isShow, setIsShow] = useState(false);
   const toggle = () => setIsShow(!isShow);
+
   return (
-    <ul>
+    <div className="items">
       <button className="show" onMouseOver={toggle}>
         {isShow ? "Professions" : "Professions"}
       </button>
-      {isShow &&
-        professions.map((professions) => (
-          <ul class="subitems" key={professions.id}>
+      <ul className="subitems">
+        {isShow &&
+          professions.map((professions) => (
             <li>
               <img
                 src={professions.image.default}
-                className="profession_icon"
-                alt="Profession Icon"
+                className="icon"
+                alt="Class Icon"
                 title={professions.name}
               />
             </li>
-          </ul>
-        ))}
-    </ul>
+          ))}
+      </ul>
+    </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Home() {
     <div className="root">
       <header className="main_header">
         <h1>World of Warcraft - Classic</h1>
-        <h2>Uma página sobre a versão Clássica do jogo World of Warcraft.</h2>
+        <h2>Basics of World of Warcraft explained</h2>
         <nav className="site_nav">
           <Locals />
           <Races />
@@ -16,6 +16,8 @@ export default function Home() {
           <Professions />
       </nav>
       </header>
+      <div className="main_introduction">
+      </div>
     </div>
   );
 }

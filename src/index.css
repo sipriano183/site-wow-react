@@ -9,6 +9,13 @@
   src: url(../src/assets/fonts/FrizQuadrataTT.ttf);
 }
 
+* {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+}
+
 body {
   background-image: url(../src//assets/images/maps/classic_maps/zones/world.jpg);
   background-size:cover;
@@ -39,7 +46,7 @@ body {
 
 }
 
-.main_header > .site_nav {
+.site_nav {
   align-items:flex-start;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, auto));
@@ -48,16 +55,12 @@ body {
   text-shadow: 4px 4px 4px black;
   color: rgba(205, 215, 230, 0.863);
   border-top: 1px solid rgba(205, 215, 230, 0.863);
+  padding: 10px;
 }
 
-
-.subitems {
+.items .subitems {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, auto));
-}
-
-.subitems > li {
-  display:flex;
+  grid-template-columns: repeat(4, 1fr)
 }
 
 
@@ -65,10 +68,11 @@ body {
   font-family: "titleFont", sans-serif;
   font-size: 15px;
   text-shadow: 4px 4px 4px black;
-  width: 150px;
+  width: 270px;
   background-color: rgba(117, 107, 107, 0.205);
   color: rgba(223, 201, 3, 0.904);
   border-radius:25px;
+
 }
 
 
@@ -116,7 +120,7 @@ a:focus{
 
 /* Icons */
 
-.profession_icon {
+.icon {
   width: 40px;
   padding-bottom: 10px;
 } 

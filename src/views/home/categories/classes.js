@@ -2,18 +2,28 @@ import { useState } from "react";
 import classes from "../../../data/classes";
 
 export default function Classe() {
-  const [isShow, setIsShow] = useState(false)
+  const [isShow, setIsShow] = useState(false);
 
-  const toggle = () => setIsShow(!isShow)
+  const toggle = () => setIsShow(!isShow);
 
   return (
-    <ul>
-      <button className="show" onMouseOver={toggle}>{isShow ? 'Classes' : 'Classes'}</button>
-      {isShow && classes.map((classes) => (
-        <ul className="subitems" key={classes.id}>
-          <li>{classes.name}</li>
-        </ul>
-      ))}
-    </ul>
+    <div className="items">
+      <button className="show" onMouseOver={toggle}>
+        {isShow ? "Classes" : "Classes"}
+      </button>
+      <ul className="subitems">
+        {isShow &&
+          classes.map((classes) => (
+            <li>
+              <img
+                src={classes.image.default}
+                className="icon"
+                alt="Class Icon"
+                title={classes.name}
+              />
+            </li>
+          ))}
+      </ul>
+    </div>
   );
 }
