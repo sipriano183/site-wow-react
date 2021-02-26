@@ -2,6 +2,7 @@ import Locals from "./categories/locals";
 import Races from "./categories/races";
 import Classe from "./categories/classes";
 import Professions from "./categories/professions";
+import Description from "./description";
 
 export default function Home() {
   return (
@@ -16,8 +17,7 @@ export default function Home() {
           <Professions />
       </nav>
       </header>
-      <div className="main_introduction">
-      </div>
+        <Description />
     </div>
   );
 }

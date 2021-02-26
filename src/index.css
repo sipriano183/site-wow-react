@@ -76,11 +76,11 @@ body {
 }
 
 
-.main_introduction {
+.introduction {
   font-family: "textFont", sans-serif;
   text-shadow: 4px 4px 4px black;
   color:rgba(255, 255, 255, 0.904);
-  line-height: 1.5;
+  line-height: 2;
   text-align: justify;
   text-indent: 3rem;
   border: 1px solid rgba(197, 189, 189, 0.829);
@@ -88,10 +88,12 @@ body {
   border-radius: 20px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  padding: 10px;
 }
 
-.main_introduction > h2, .main_introduction > h3 {
+.introduction > h2, .introduction > h3 {
   font-family: "titleFont", sans-serif;
+  text-align: center;
 }
 
 a {
