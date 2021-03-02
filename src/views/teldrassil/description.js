@@ -1,14 +1,15 @@
+import { useState } from "react";
+
 import see from "../../assets/images/Spells/DetectInvisibility.png";
 import invisibility from "../../assets/images/Abilities/Ambush_1.png";
 
-import { useState } from "react";
-
-export default function Gallery() {
+export default function Description() {
   const [isShow, setIsShow] = useState(false);
   const toggle = () => setIsShow(!isShow);
 
   return (
-    <div className="gallery">
+    <div className="introduction">
+      <h2>The Game</h2>
       <button className="show_text" onClick={toggle}>
         {isShow ? (
           <img
@@ -26,6 +27,11 @@ export default function Gallery() {
           />
         )}
       </button>
+      {isShow && (
+        <div className="main_text">
+          <h3>The Area</h3>
+        </div>
+      )}
     </div>
   );
 }

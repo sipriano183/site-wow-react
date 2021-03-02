@@ -8,18 +8,21 @@ import {
   Route,
   BrowserRouter,
 } from "react-router-dom";
+import Area from "./views/area/Area";
+import Error from "./views/error/Error";
 
-class App extends React.Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/teldrassil" component={Teldrassil} />
-        </Switch>{" "}
-      </BrowserRouter>
-    );
-  }
+
+export default function App () {
+
+  return (<BrowserRouter>
+    <Switch>
+    <Route exact path="/" component={Home} />
+      <Route exact path="/teldrassil" component={Teldrassil} />
+      <Route exact path="/area/:area" component={Area} />
+      <Route component={Error} />
+    </Switch>
+  </BrowserRouter>)
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+ReactDOM.render(<App />, document.getElementById("root-react"));

@@ -3,9 +3,14 @@ import Races from "./categories/races";
 import Classe from "./categories/classes";
 import Professions from "./categories/professions";
 import Description from "./description";
-import Gallery from "./gallery";
+import { useLocation } from "react-router-dom";
 
 export default function Home() {
+
+
+  const location = useLocation()
+
+  console.log(location)
   return (
     <div className="root">
       <header className="main_header">

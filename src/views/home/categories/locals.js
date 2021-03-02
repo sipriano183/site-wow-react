@@ -1,10 +1,12 @@
 import { useState } from "react";
 import locations from "../../../data/locations";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 export default function Locals() {
   const [isShow, setIsShow] = useState(false);
   const toggle = () => setIsShow(!isShow);
+
+  const history = useHistory();
   return (
     <div>
       <button className="show" onClick={toggle}>
@@ -17,12 +19,21 @@ export default function Locals() {
             <ul className="subitems">
               {location.sublocations.map((sublocation) => (
                 <li key={sublocation.id}>
-                  <img
-                    src={sublocation.image.default}
-                    className="icon"
-                    alt="Location Icon"
-                    title={sublocation.name}
-                  />
+                  <button
+                    onClick={() =>
+                      history.push(
+                        "/area/" + sublocation.name.replace(/ /g, "")
+                      )
+                    }
+                    className="show_text"
+                  >
+                    <img
+                      src={sublocation.image.default}
+                      className="icon"
+                      alt="Location Icon"
+                      title={sublocation.name}
+                    />
+                  </button>
                 </li>
               ))}
             </ul>
