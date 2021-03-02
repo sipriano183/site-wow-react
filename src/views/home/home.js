@@ -3,6 +3,7 @@ import Races from "./categories/races";
 import Classe from "./categories/classes";
 import Professions from "./categories/professions";
 import Description from "./description";
+import Gallery from "./gallery";
 
 export default function Home() {
   return (
@@ -15,9 +16,9 @@ export default function Home() {
           <Races />
           <Classe />
           <Professions />
-      </nav>
+        </nav>
       </header>
-        <Description />
+      <Description />
     </div>
   );
 }
