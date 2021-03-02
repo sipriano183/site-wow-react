@@ -93,10 +93,10 @@ body {
   padding: 10px;
 }
 
-.introduction > p {
+/*.introduction > p {
   opacity: 0;
   transition: opacity 4s ease-out;
-}
+} */
 
 .introduction > p:hover{
   opacity: 1;

@@ -3,7 +3,6 @@ import classes from "../../../data/classes";
 
 export default function Classe() {
   const [isShow, setIsShow] = useState(false);
-
   const toggle = () => setIsShow(!isShow);
 
   return (
