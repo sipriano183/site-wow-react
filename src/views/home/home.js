@@ -3,14 +3,10 @@ import Races from "./categories/races";
 import Classe from "./categories/classes";
 import Professions from "./categories/professions";
 import Description from "./description";
-import { useLocation } from "react-router-dom";
 
 export default function Home() {
 
-
-  const location = useLocation()
-
-  console.log(location)
+  // Essa é a renderização padrão da página principal, vinculada ao Index. Toda a composição da página principal é dada através da importação de funções, deixando o código mais limpo
   return (
     <div className="root">
       <header className="main_header">

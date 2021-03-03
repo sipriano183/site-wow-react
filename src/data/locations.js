@@ -1,3 +1,5 @@
+/* Esses arrays de objetos receberão os parâmetros para todos os links do Header do site, os parâmetros aqui são literalmente infinitos, você pode colocar o que quiser com a lógica certa */
+
 import Teldrassil from "../views/teldrassil/teldrassil";
 
 const locations = [

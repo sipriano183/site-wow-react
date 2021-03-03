@@ -8,14 +8,14 @@
   src: url(../src/assets/fonts/FrizQuadrataTT.ttf);
 }
 
-/* Fade-in animation for texts */
+/* Animação básica para fade-in do texto*/
 @keyframes text-fade {
   from {opacity: 0};
   to {opacity: 1};
 }
 
 
-/* Overall page styling */
+/* Estilização padrão da página*/
 * {
   list-style: none;
   box-sizing: border-box;
@@ -40,7 +40,7 @@ body {
   border-radius: 10px; 
 }
 
-/* Header and navigation styling */
+/* Estilização do header e do menu de navegação*/
 
 .main_header {
   font-family: "titleFont", sans-serif;
@@ -91,7 +91,7 @@ body {
 } 
 
 
-/* Main text styling */
+/* Estilização do texto principal da página*/
 
 .introduction, .gallery {
   font-family: "textFont", sans-serif;
@@ -145,7 +145,7 @@ body {
 }
 
 
-/* Links styling */
+/* Estilização de links*/
 
 a {
   text-decoration: none;

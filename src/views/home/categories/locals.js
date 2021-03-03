@@ -7,6 +7,8 @@ export default function Locals() {
   const toggle = () => setIsShow(!isShow);
 
   const history = useHistory();
+
+  // Aqui nós temos um mapeamento duplo, pois temos 4 arrays no componente locations. Dois locations (Kalimdor e Eastern Kingdoms) e dois sublocations, com todas as zonas de cada um. Mas a lógica se mantém
   return (
     <div>
       <button className="show" onClick={toggle}>
@@ -40,5 +42,6 @@ export default function Locals() {
           </ul>
         ))}
     </div>
+    //A lógica de roteamento também é feita aqui e na página Area
   );
 }

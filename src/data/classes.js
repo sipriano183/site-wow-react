@@ -1,3 +1,5 @@
+/* Esses arrays de objetos receberão os parâmetros para todos os links do Header do site */
+
 const classes = [
     {
         id:0,
