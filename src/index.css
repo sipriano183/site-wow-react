@@ -53,7 +53,10 @@ body {
   border-radius: 20px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  
+}
+
+.main_header > h2 {
+  padding-left: 3rem;
 }
 
 .site_nav {
@@ -90,10 +93,25 @@ body {
   border-radius: 10px;
 } 
 
+.hearth {
+  float:left;
+  border-radius: 10px;
+  width:40px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hearth_icon {
+  float:left;
+  width: 40px;
+  border: 3px solid rgba(221, 193, 193, 0.904);
+  border-radius: 10px;
+}
+
 
 /* Estilização do texto principal da página*/
 
-.introduction, .gallery {
+.introduction {
   font-family: "textFont", sans-serif;
   text-shadow: 4px 4px 4px black;
   color:rgba(255, 255, 255, 0.904);
@@ -116,8 +134,8 @@ body {
   animation-duration: 4s;
 }
 
-.introduction > p:hover{
-  opacity: 1;
+.main_text > p{
+  text-indent: 3rem;
 }
 
 .introduction > h2, .introduction > h3, .main_text > h3 {
@@ -136,12 +154,10 @@ body {
 }
 
 .show_text {
-  display: inline-block;
   border-radius: 10px;
   width:40px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  
 }
 
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import see from "../../assets/images/Spells/DetectInvisibility.png";
-import invisibility from "../../assets/images/Abilities/Ambush_1.png";
+import see from "../../../assets/images/Spells/DetectInvisibility.png";
+import invisibility from "../../../assets/images/Abilities/Ambush_1.png";
 
 export default function Description() {
   const [isShow, setIsShow] = useState(false);
@@ -9,7 +9,7 @@ export default function Description() {
 
   return (
     <div className="introduction">
-      <h2>The Game</h2>
+      <h2>The Area</h2>
       <button className="show_text" onClick={toggle}>
         {isShow ? (
           <img
@@ -29,7 +29,7 @@ export default function Description() {
       </button>
       {isShow && (
         <div className="main_text">
-          <h3>The Area</h3>
+          <h3>TBA</h3>
         </div>
       )}
     </div>
