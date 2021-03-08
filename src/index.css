@@ -117,7 +117,6 @@ body {
   color:rgba(255, 255, 255, 0.904);
   background:rgba(15, 12, 12, 0.801);
   line-height: 2;
-  text-align: justify;
   border: 1px solid rgba(197, 189, 189, 0.829);
   border-radius: 20px;
   border-top-right-radius: 10px;
@@ -134,7 +133,7 @@ body {
   animation-duration: 4s;
 }
 
-.main_text > p{
+.main_text > p {
   text-indent: 3rem;
 }
 
@@ -185,4 +184,19 @@ a:hover {
 a:focus{
   border-bottom: 1px solid;
   text-shadow: 4px 4px 4px black;
+}
+
+/* Estilização de imagens */
+
+.map {
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.904);
+  width: 750px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map:hover {
+  border: 2px solid rgba(243, 123, 11, 0.877)
 }
