@@ -1,5 +1,4 @@
 import { useParams, useHistory } from "react-router-dom";
-import locations from "../../data/locations";
 
 import Locals from "../home/categories/locals";
 import Races from "../home/categories/races";
@@ -7,20 +6,21 @@ import Classe from "../home/categories/classes";
 import Professions from "../home/categories/professions";
 
 import hearth from "../../assets/images/Miscellaneous/Rune_01.png";
+import factions from "../../data/races";
 
-// Aqui é feita toda a lógica de roteamento para as páginas de areas do site.
-export default function Area() {
-  const { area } = useParams();
+export default function Race() {
+  const { race } = useParams();
   const history = useHistory();
 
   const current = [
-    ...locations[0].sublocations,
-    ...locations[1].sublocations,
+    ...factions[0].races,
+    ...factions[1].races,
   ].find(
-    (loc) =>
-      loc.name.toLowerCase().replace(/ /g, "") ===
-      area.toLowerCase().replace(/ /g, "")
+    (rac) =>
+      rac.name.toLowerCase().replace(/ /g, "") ===
+      race.toLowerCase().replace(/ /g, "")
   );
+
   return (
     <div className="root">
       {current && (

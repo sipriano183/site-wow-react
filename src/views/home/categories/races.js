@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import factions from "../../../data/races";
 
 export default function Races() {
   const [isShow, setIsShow] = useState(false);
   const toggle = () => setIsShow(!isShow);
+  const history = useHistory();
   return (
     <div>
       <button className="show" onClick={toggle}>
@@ -17,12 +19,21 @@ export default function Races() {
               <ul className="subitems">
                 {faction.races.map((races) => (
                   <li key={races.id}>
-                    <img
-                      src={races.image.default}
-                      className="icon"
-                      alt="Profession Icon"
-                      title={races.name}
-                    />
+                    <button
+                      onClick={() =>
+                        history.push(
+                          "/race/" + races.name.replace(/ /g, "")
+                        )
+                      }
+                      className="show_text"
+                    >
+                      <img
+                        src={races.image.default}
+                        className="icon"
+                        alt="Location Icon"
+                        title={races.name}
+                      />
+                    </button>
                   </li>
                 ))}
               </ul>

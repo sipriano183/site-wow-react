@@ -9,7 +9,7 @@
 }
 
 /* Animação básica para fade-in do texto*/
-@keyframes text-fade {
+@keyframes fade {
   from {opacity: 0};
   to {opacity: 1};
 }
@@ -34,6 +34,7 @@ body {
   background-attachment: fixed;
 }
 
+
 .root {
   max-width: 1200px;
   margin: 0 auto;
@@ -50,7 +51,6 @@ body {
   word-spacing: 10px;
   border: 1px solid rgba(197, 189, 189, 0.829);
   background:rgba(15, 12, 12, 0.801);
-  border-radius: 20px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -124,18 +124,24 @@ body {
   padding: 10px;
 }
 
-.introduction .icon {
-  width:30px;
-}
-
 .introduction > .main_text {
-  animation-name: text-fade;
+  animation-name: fade;
   animation-duration: 4s;
 }
 
 .main_text > p {
   text-indent: 3rem;
 }
+
+.main_text > ul {
+  text-indent: 3.5rem;
+}
+
+.text_icon {
+  width: 35px;
+  border: 3px solid rgba(221, 193, 193, 0.904);
+  border-radius: 10px;
+} 
 
 .introduction > h2, .introduction > h3, .main_text > h3 {
   display: inline-block;
@@ -152,11 +158,31 @@ body {
   text-indent: 5rem
 }
 
-.show_text {
+.show_text, .show_content {
   border-radius: 10px;
-  width:40px;
+  width: 35px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.map_icon {
+  border-radius: 50%;
+  width: 35px;
+  border: 3px solid rgba(221, 193, 193, 0.904);
+}
+
+/* Estilização do Footer */
+
+.main_footer {
+  text-align: center;
+  font-family: "textFont", sans-serif;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.904);
+  text-shadow: 4px 4px 4px black;
+  border: 1px solid rgba(197, 189, 189, 0.829);
+  background:rgba(15, 12, 12, 0.801);
+  border-radius: 10px;
+
 }
 
 
@@ -189,7 +215,10 @@ a:focus{
 /* Estilização de imagens */
 
 .map {
+  animation-name: fade;
+  animation-duration: 4s;
   border-radius: 40px;
+  cursor: pointer;
   border: 2px solid rgba(255, 255, 255, 0.904);
   width: 750px;
   display: block;

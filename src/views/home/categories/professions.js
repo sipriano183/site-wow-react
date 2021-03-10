@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import professions from "../../../data/professions";
 
 export default function Profession() {
   const [isShow, setIsShow] = useState(false);
+  const history = useHistory();
   const toggle = () => setIsShow(!isShow);
 
   return (
@@ -14,12 +16,21 @@ export default function Profession() {
         {isShow &&
           professions.map((professions) => (
             <li>
-              <img
-                src={professions.image.default}
-                className="icon"
-                alt="Class Icon"
-                title={professions.name}
-              />
+              <button
+                onClick={() =>
+                  history.push(
+                    "/profession/" + professions.name.replace(/ /g, "")
+                  )
+                }
+                className="show_text"
+              >
+                <img
+                  src={professions.image.default}
+                  className="icon"
+                  alt="Location Icon"
+                  title={professions.name}
+                />
+              </button>
             </li>
           ))}
       </ul>

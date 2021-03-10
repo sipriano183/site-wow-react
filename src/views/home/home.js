@@ -32,6 +32,9 @@ export default function Home() {
         </nav>
       </header>
       <Description />
+      <footer className="main_footer">
+        <p>All rights reserved by Blizzard Entertainment.</p>
+      </footer>
     </div>
   );
 }

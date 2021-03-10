@@ -38,7 +38,7 @@ const professions = [
     },
     {
         id:7,
-        name:"First Aid",
+        name:"FirstAid",
         image: require("../assets/images/Spells/SealOfSacrifice.png")
     },
     {

@@ -17,14 +17,14 @@ export default function Description() {
             src={invisibility}
             alt="test"
             title="Shadowmeld"
-            className="icon"
+            className="text_icon"
           />
         ) : (
           <img
             src={see}
             alt="test"
             title="Detect Invisibility"
-            className="icon"
+            className="text_icon"
           />
         )}
       </button>
