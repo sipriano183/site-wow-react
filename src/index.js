@@ -11,6 +11,7 @@ import Race from "./views/race/race";
 import Classe from "./views/classe/classe";
 import Profession from "./views/profession/profession";
 
+
 /*É necessário exportar a função App como default para o método ReactDOM.render para renderizar a página */
 export default function App() {
   /*Todo as rotas do site são configuradas por essa lógica aqui, a rota padrão tem como seu componente a função Home, outras são dadas por páginas padrão que recebem a lógica para renderização  */

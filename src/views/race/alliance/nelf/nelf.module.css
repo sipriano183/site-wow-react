@@ -1,0 +1,32 @@
+.spellIcon {
+  border-radius: 10px;
+  border: 2px solid rgba(197, 189, 189, 0.829);
+  width: 35px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.spellText {
+  font-weight: normal;
+  color: rgba(18, 125, 175, 0.815);
+
+}
+
+.c1 {
+  color: #c69b6d!important;
+}
+
+.c3 {
+  color: #aad372!important;
+}
+
+.c4 {
+  color: #fff468!important;
+}
+
+.c5 {
+  color: #fff!important;
+}
+
+.c11 {
+  color: #ff7c0a!important;
+}

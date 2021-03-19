@@ -9,7 +9,7 @@ export default function Description() {
   const [isShow, setIsShow] = useState(false);
   const [isShowMap, setIsShowMap] = useState(null);
 
-  //const toggle = () => setIsShow(!isShow);
+
 
   function toggle() {
     setIsShow(!isShow);
@@ -40,8 +40,6 @@ export default function Description() {
           />
         )}
       </button>
-      {console.log(isShow)}
-      {console.log(isShowMap)}
       {isShow && 
         <div className="main_text">
           <h3>Description</h3>
